@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Qonita Najiah</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #333;
+            line-height: 1.45;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 30px auto;
+            background: white;
+            padding: 35px 45px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.12);
+        }
+
+        /* ================= HEADER ================= */
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 55px;
+            margin-bottom: 25px;
+        }
+
+        .profile-photo {
+            width: 175px;
+            height: 175px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header-info h1 {
+            font-size: 42px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            margin-bottom: 22px;
+            color: #303030;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon {
+            width: 20px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        /* ================= SECTION ================= */
+
+        .section {
+            margin-top: 15px;
+        }
+
+        .section-title {
+            background: #eeeeee;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* ================= PROFIL ================= */
+
+        .profile-text {
+            font-size: 16px;
+            text-align: justify;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        /* ================= PENDIDIKAN ================= */
+
+        .education-item {
+            margin-bottom: 13px;
+        }
+
+        .education-item strong {
+            font-size: 17px;
+            color: #333;
+        }
+
+        .education-item span {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .education-item p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .education-item ul {
+            margin-left: 30px;
+            color: #666;
+        }
+
+        /* ================= EXPERIENCE ================= */
+
+        .experience-item {
+            margin-bottom: 12px;
+        }
+
+        .experience-title {
+            font-size: 17px;
+            font-weight: 800;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .experience-item ul {
+            padding-left: 24px;
+        }
+
+        .experience-item li {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 3px;
+        }
+
+        /* ================= SKILL ================= */
+
+        .skills-section {
+            display: grid;
+            grid-template-columns: 190px 1fr 1fr;
+            gap: 35px;
+            align-items: start;
+            margin-top: 25px;
+        }
+
+        .skill-title {
+            background: #eeeeee;
+            padding: 10px 15px;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .skill-column h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .skill-column p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+
+        /* ================= PRINT ================= */
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 800px) {
+            .cv {
+                width: 100%;
+                margin: 0;
+                padding: 25px;
+            }
+
+            .header {
+                gap: 25px;
+            }
+
+            .profile-photo {
+                width: 130px;
+                height: 130px;
+            }
+
+            .header-info h1 {
+                font-size: 30px;
+            }
+
+            .skills-section {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact {
+                align-items: center;
+            }
+
+            .header-info h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <img src="qonita.jpg.jpg" alt="Foto Qonita Najiah" class="profile-photo">
+
+        <div class="header-info">
+            <h1>QONITA NAJIAH</h1>
+
+            <div class="contact">
+
+                <div class="contact-item">
+                    <span class="icon">☎</span>
+                    <span>+62 851-5774-5860</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">✉</span>
+                    <span>qnajiyah15@gmail.com</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <span>Tangerang, Indonesia</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- PROFIL -->
+    <div class="section">
+
+        <div class="section-title">
+            PROFIL
+        </div>
+
+        <p class="profile-text">
+            Mahasiswa Program Studi Sistem Informasi yang memiliki kemampuan dalam
+            mengoperasikan berbagai perangkat lunak seperti Microsoft Office, Canva,
+            dan software editing video. Terbiasa bekerja secara teliti, disiplin,
+            bertanggung jawab, serta mampu beradaptasi dengan cepat. Mampu bekerja
+            secara individu maupun dalam tim, serta memiliki semangat belajar yang
+            tinggi untuk menghadapi tantangan di lingkungan kerja profesional.
+        </p>
+
+    </div>
+
+
+    <!-- PENDIDIKAN -->
+    <div class="section">
+
+        <div class="section-title">
+            PENDIDIKAN
+        </div>
+
+        <div class="education-item">
+            <strong>Man 2 Kota Tangerang</strong>
+            <span>(2022–2025)</span>
+
+            <p>Jurusan Ilmu Pengetahuan sosial</p>
+
+            <ul>
+                <li>juara 1 lomba poster digital</li>
+            </ul>
+        </div>
+
+        <div class="education-item">
+            <strong>Telkom University Jakarta</strong>
+            <span>(2025 - Sekarang)</span>
+
+            <p>Sistem Informasi</p>
+        </div>
+
+    </div>
+
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+
+        <div class="section-title">
+            EXPERIENCE
+        </div>
+
+        <div class="experience-item">
+
+            <div class="experience-title">
+                Ketua Pelaksana Panitia Peringatan HUT RI 17 Agustus (Karang Taruna)
+            </div>
+
+            <ul>
+                <li>Mengkoordinasikan persiapan dan pelaksanaan seluruh rangkaian kegiatan 17 Agustus.</li>
+                <li>Membagi tugas dan mengarahkan anggota panitia sesuai tanggung jawab masing-masing.</li>
+                <li>Memastikan kegiatan berjalan sesuai rundown serta menangani kendala selama acara.</li>
+                <li>Menjadi Master Of Ceremony saat acara penutupan.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <div class="experience-title">
+                Assistant Coach Taekwondo (Garuda Club)
+            </div>
+
+            <ul>
+                <li>Membantu coach dalam melatih dan membimbing murid selama sesi latihan.</li>
+                <li>Mendampingi murid taekwondo jenjang (tk-dewasa) dalam latihan teknik dasar, fisik, dan pemanasan.</li>
+                <li>Memberikan arahan serta membantu menjaga kedisiplinan peserta selama latihan.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="experience-item">
+
+            <div class="experience-title">
+                Volunteer Member IYMPACK Safari outbound x Damkar (Tangerang)
+            </div>
+
+            <ul>
+                <li>Mendampingi anak-anak panti selama mengikuti rangkaian kegiatan Safari Outbound x Damkar.</li>
+                <li>Membantu mengarahkan dan mendukung anak-anak selama kegiatan berlangsung.</li>
+                <li>Bekerja sama dengan volunteer dan panitia untuk menciptakan kegiatan yang aman, nyaman, dan menyenangkan bagi peserta.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- SKILL -->
+    <div class="skills-section">
+
+        <div class="skill-title">
+            SKILL
+        </div>
+
+        <div class="skill-column">
+
+            <h3>Personal</h3>
+
+            <p>Komunikatif</p>
+            <p>Teamwork</p>
+            <p>Manajemen Waktu</p>
+            <p>Problem Solving</p>
+
+        </div>
+
+        <div class="skill-column">
+
+            <h3>Software Skill</h3>
+
+            <p>Ms.office</p>
+            <p>Canva</p>
+            <p>Software Editing Video/Photo</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
